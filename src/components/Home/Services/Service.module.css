@@ -173,6 +173,7 @@
   }
   .one h2::before {
     border: 2px solid var(--color-bg);
+    top: 22px;
   }
 
   .one:nth-child(even) > div {
