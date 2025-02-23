@@ -131,9 +131,13 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .service {
+    padding: 0 25px;
+  }
   .services {
     padding: 0;
     gap: 300px;
+    align-items: center;
   }
   .texts {
     display: flex;

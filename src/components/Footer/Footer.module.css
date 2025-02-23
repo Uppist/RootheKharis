@@ -197,7 +197,7 @@ a {
   }
 
   .footer2 {
-    padding: 0;
+    padding: 25px 50px;
   }
 
   .uppist {
@@ -220,7 +220,8 @@ a {
   } */
 
   .footer2 h2 {
-    font-size: 14px;
+    font-size: 10px;
+    width: 193px;
   }
 
   .quicks label,
@@ -243,6 +244,9 @@ a {
 
   .connect svg {
     width: 16px;
+  }
+  .connect span {
+    font-size: 14px;
   }
 
   .connect div {
