@@ -169,7 +169,7 @@ export default function NavBar({
                   onClose();
                 }}
               >
-                Serives{" "}
+                Services{" "}
               </li>
             </Link>
             <hr />

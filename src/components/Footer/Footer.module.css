@@ -184,6 +184,7 @@ a {
 
   .svg {
     order: -1; /* Moves SVGs below Quick Links */
+    gap: 8px;
   }
 
   .details h3 {
@@ -197,7 +198,7 @@ a {
   }
 
   .footer2 {
-    padding: 25px 50px;
+    padding: 50px 25px;
   }
 
   .uppist {
@@ -219,6 +220,10 @@ a {
     align-items: baseline;
   } */
 
+  .svg svg {
+    width: 16px;
+    height: 19px;
+  }
   .footer2 h2 {
     font-size: 10px;
     width: 193px;
