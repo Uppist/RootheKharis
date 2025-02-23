@@ -1,0 +1,98 @@
+/** @format */
+
+.about {
+  margin-top: 170px;
+  display: flex;
+  padding: 0 100px;
+  justify-content: space-between;
+}
+
+.about div label {
+  color: var(--color-bg);
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--font-source);
+}
+
+.about div h2 {
+  margin: 0;
+  margin-top: 10px;
+  font-family: var(--font-fair);
+  color: var(--color-text2);
+  font-size: 50px;
+  font-weight: 900;
+  width: 556px;
+  margin-bottom: 20px;
+}
+
+.about div p {
+  margin: 0;
+  margin-top: 7px;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--color-text);
+  font-family: var(--font-source);
+  width: 600px;
+  margin-bottom: 30px;
+}
+
+.button {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-bg);
+  border: 1px solid var(--color-bg);
+  padding: 12px 60px;
+  border-radius: 8px;
+  font-family: var(--font-source);
+  background-color: var(--color-primary);
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    flex-direction: column-reverse;
+    padding: 0 25px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about div label {
+    font-size: 16px;
+  }
+
+  .about div h2 {
+    width: 311px;
+    font-size: 24px;
+  }
+
+  .about div p {
+    font-size: 16px;
+    width: 292px;
+    text-align: justify;
+  }
+
+  .about img {
+    width: 305px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+
+  .global {
+    position: absolute;
+    top: 100px;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .button svg {
+    width: 18px;
+    height: 18px;
+  }
+}

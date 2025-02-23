@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "question": "Why Should I Trust Your Firm For My Case?",
+    "answer": "Our legal team provides all of our clients with case-specific strategies designed to obtain the best outcome for their cases."
+  },
+  {
+    "id": 2,
+    "question": "What Types of Cases Does Your Law Firm Handle?",
+    "answer": "Every case within our area of practice. This means that we never treat two cases the same and avoid the 'cookie-cutter' approach."
+  },
+  {
+    "id": 3,
+    "question": "What Are Your Opening Hours?",
+    "answer": "We are dedicated to creating litigation strategies that will result in the most favorable judgments for our clients. We are open 9am - 6pm daily."
+  },
+  {
+    "id": 4,
+    "question": "Do You Charge For Your Consultations?",
+    "answer": "Your goals and needs are always at the forefront of every decision we make and every action we take."
+  }
+]

@@ -1,0 +1,14 @@
+/** @format */
+
+.bg {
+  background: url("../../assets/bg1.png") no-repeat;
+  background-position-x: left;
+  background-position-y: top;
+}
+
+.bg2 {
+  background: url("../../assets/bg2.png") no-repeat;
+  background-position-x: right;
+  background-position-y: 1130px;
+  background-size: 620px;
+}

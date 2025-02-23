@@ -1,0 +1,37 @@
+[
+  {
+    "image": "image1.png",
+    "title": "Real Estate & Construction",
+    "description": "Developing, constructing, or expanding a new business operation usually involves the acquisition of real estate properties."
+  },
+  {
+    "image": "image3.png",
+    "title": "Corporate & Commercial Law",
+    "description": "We provide expert legal services in business structuring, mergers, acquisitions, and corporate governance."
+  },
+  {
+    "image": "image2.png",
+    "title": "Intellectual Property Law",
+    "description": "Protect your brand, patents, and creative assets with our comprehensive intellectual property legal services."
+  },
+  {
+    "image": "image4.png",
+    "title": "Banking & Finance",
+    "description": "Offering advisory services on financial regulations, investments, and banking legalities."
+  },
+  {
+    "image": "image5.png",
+    "title": "Employment & Labor Law",
+    "description": "Guidance on labor disputes, employment contracts, and workplace policies."
+  },
+  {
+    "image": "image6.png",
+    "title": "Tax & Regulatory Compliance",
+    "description": "Ensuring businesses stay compliant with tax laws and regulatory requirements."
+  },
+  {
+    "image": "image7.png",
+    "title": "Dispute Resolution & Mediation",
+    "description": "Helping clients resolve disputes through arbitration and legal mediation services."
+  }
+]

@@ -1,0 +1,289 @@
+/** @format */
+
+@import "../../style.css";
+
+.bg {
+  background-color: var(--color-text2);
+}
+
+.footer {
+  background: url("../../assets/bg.png") no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* align-items: center; */
+  margin-top: 60px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.uppist {
+  width: 53px;
+  height: auto;
+}
+
+.logo {
+  width: 259px;
+  height: auto;
+}
+
+.details {
+  display: flex;
+  gap: 200px;
+}
+
+.details > div {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.details h3 {
+  font-family: var(--font-fair);
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--color-primary);
+  margin-bottom: 0;
+}
+
+.details span {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-primary);
+  font-family: var(--font-source);
+}
+
+.days {
+  flex-direction: column;
+}
+
+.footer hr {
+  border: 1px solid hsla(0, 0%, 90%, 0.11);
+  width: -webkit-fill-available;
+}
+
+.footer > label {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--font-source);
+  color: var(--color-primary);
+  margin-top: 40px;
+  text-align: center;
+}
+
+.footer > span {
+  display: flex;
+  /* align-items: center; */
+  gap: 2px;
+  justify-content: center;
+  /* margin-top: -70px; */
+}
+
+.footer2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 100px 0;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer2 h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-primary);
+  font-family: var(--font-source);
+  width: 350px;
+}
+
+.quicks {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.quicks label,
+.connect label {
+  font-size: 24px;
+  font-weight: 900;
+  font-family: var(--font-fair);
+  color: var(--color-primary);
+  width: 140px;
+}
+
+.quicks ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--font-source);
+  color: var(--color-primary);
+}
+
+.quicks ul li {
+  cursor: pointer;
+}
+
+.connect {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.connect div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.connect span {
+  font-family: var(--font-source);
+}
+.location {
+  align-items: baseline;
+}
+
+.location svg {
+  width: 38px;
+}
+
+.svg {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+  .details {
+    flex-direction: column;
+  }
+
+  .connect {
+    order: -5; /* Moves "Contact Us" to the top */
+  }
+
+  .footerlogo {
+    order: -4; /* Moves Logo below Contact Us */
+  }
+
+  .details h2 {
+    order: -3; /* Moves text section below Logo */
+  }
+
+  .quicks {
+    order: -2; /* Moves Quick Links below Text */
+  }
+
+  .svg {
+    order: -1; /* Moves SVGs below Quick Links */
+  }
+
+  .details h3 {
+    order: 0; /* Keeps Open Hour at the bottom */
+  }
+  .footer {
+    /* padding: 50px 25px; */
+    align-items: baseline;
+    background-position-x: left;
+    background-position-y: bottom;
+  }
+
+  .footer2 {
+    padding: 0;
+  }
+
+  .uppist {
+    width: 24px;
+  }
+  .details,
+  .footer2 {
+    flex-direction: column;
+    gap: 20px;
+    align-items: baseline;
+  }
+
+  /* .location h2 {
+    font-size: 16px;
+  } */
+
+  /* .location span {
+    font-size: 14px;
+    align-items: baseline;
+  } */
+
+  .footer2 h2 {
+    font-size: 14px;
+  }
+
+  .quicks label,
+  .connect label {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .quicks ul {
+    font-size: 14px;
+  }
+
+  .connect {
+    gap: 10px;
+  }
+
+  .logo {
+    width: 75px;
+  }
+
+  .connect svg {
+    width: 16px;
+  }
+
+  .connect div {
+    gap: 12px;
+  }
+
+  .footer > label {
+    margin-top: 0;
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .footer > span img {
+    width: 25px;
+  }
+
+  .footer > span {
+    /* margin-top: -85px; */
+    align-items: center;
+  }
+
+  .design {
+    width: 31px;
+    height: 7px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1250px) {
+  .footer {
+    padding: 50px;
+    align-items: baseline;
+  }
+
+  .details {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 30px;
+  }
+
+  .footer2 {
+    flex-direction: column;
+    gap: 40px;
+  }
+}

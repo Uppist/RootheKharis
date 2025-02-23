@@ -1,0 +1,81 @@
+/** @format */
+
+.purpose {
+  display: flex;
+  padding: 100px 50px;
+  gap: 83px;
+  background-color: var(--color-bg2);
+}
+
+.text label {
+  color: var(--color-bg);
+  font-family: var(--font-source);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.text h2 {
+  margin-top: 10px;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: var(--font-fair);
+  color: var(--color-text2);
+  margin: 0;
+}
+
+.text p {
+  font-size: 24px;
+  font-family: var(--font-source);
+  color: var(--color-text);
+  font-weight: 400;
+}
+
+.button {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-bg);
+  border: 1px solid var(--color-bg);
+  padding: 12px;
+  border-radius: 8px;
+  font-family: var(--font-source);
+  background-color: var(--color-bg2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+  .purpose {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img img {
+    width: 315px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text label {
+    font-size: 16px;
+  }
+
+  .text h2 {
+    font-size: 24px;
+  }
+
+  .text p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .button svg {
+    width: 16px;
+    height: 16px;
+  }
+}

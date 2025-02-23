@@ -1,0 +1,78 @@
+/** @format */
+
+.commit {
+  margin-top: 100px;
+  display: flex;
+  padding: 0 100px;
+  justify-content: space-between;
+}
+
+.commit h3 {
+  position: relative;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-text2);
+  font-family: var(--font-fair);
+}
+
+.commit h3::before {
+  content: "";
+  position: absolute;
+  top: 33px;
+  left: 0;
+  width: 55px;
+  border-radius: 4px;
+  border: 4px solid var(--color-bg);
+}
+
+.mark span {
+  width: 534px;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--color-text);
+  font-family: var(--font-source);
+  display: flex;
+  flex-direction: column;
+}
+
+.mark label {
+  font-weight: 600;
+}
+
+.mark {
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 17px;
+  margin-top: 40px;
+}
+
+.mark div {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+  .commit {
+    flex-direction: column;
+    padding: 0 25px;
+    align-items: center;
+  }
+
+  .commit img {
+    width: 305px;
+    margin: 0 auto;
+  }
+
+  .commit h3,
+  .mark span {
+    font-size: 16px;
+    width: 276px;
+  }
+
+  .commit h3::before {
+    top: 25px;
+    border: 2px solid var(--color-bg);
+  }
+}
