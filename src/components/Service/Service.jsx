@@ -17,10 +17,11 @@ import { useLocation } from "react-router-dom";
 export default function Service() {
   const location = useLocation();
   const serviceRefs = useRef({});
+  const otherServicesRef = useRef({});
 
   // Store refs for each service
   service.forEach((data) => {
-    serviceRefs.current[data.image] = useRef(null);
+    serviceRefs.current[data.title] = useRef(null);
   });
 
   useEffect(() => {
@@ -32,6 +33,11 @@ export default function Service() {
         targetElement.scrollIntoView({
           behavior: "smooth",
           block: isMobile ? "start" : "center",
+        });
+      } else if (otherServicesRef.current) {
+        otherServicesRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
         });
       }
     }
@@ -67,8 +73,8 @@ export default function Service() {
           {service.map((data, index) => (
             <div
               className={styles.details}
-              ref={(el) => (serviceRefs.current[data.image] = el)}
-              key={data.image}
+              ref={(el) => (serviceRefs.current[data.title.split(" ")[0]] = el)}
+              key={data.title}
             >
               <div className={styles.detail} key={index}>
                 <h2>{data.title}</h2>
@@ -103,7 +109,7 @@ export default function Service() {
           <div className={styles.h2}>
             <h2>Other Services</h2>
 
-            <div className={styles.container}>
+            <div className={styles.container} ref={otherServicesRef}>
               {services.map((service, index) => (
                 <div key={index} className={styles.item}>
                   <Mark />

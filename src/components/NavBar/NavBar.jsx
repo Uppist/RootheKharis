@@ -5,13 +5,7 @@ import styles from "./NavBar.module.css";
 import LogoNav from "./LogoNav";
 import { Link } from "react-router-dom";
 
-export default function NavBar({
-  scrollToSection,
-  aboutRef,
-  serviceRef,
-  contactRef,
-  homeRef,
-}) {
+export default function NavBar({}) {
   const [isSidebarVisible, setIsSidebarVisible] = useState(false);
 
   function sideBar() {
@@ -31,45 +25,20 @@ export default function NavBar({
 
         <ul className={styles.navul}>
           <Link to='/'>
-            <li
-              className={styles.lists}
-              onClick={() => scrollToSection(aboutRef)}
-            >
-              Home
-            </li>
+            <li className={styles.lists}>Home</li>
           </Link>
           <Link to='/aboutus'>
-            <li
-              className={styles.lists}
-              onClick={() => scrollToSection(aboutRef)}
-            >
-              About Us
-            </li>
+            <li className={styles.lists}>About Us</li>
           </Link>
 
           <Link to='/services'>
-            <li
-              className={styles.lists}
-              onClick={() => scrollToSection(serviceRef)}
-            >
-              Services{" "}
-            </li>
+            <li className={styles.lists}>Services </li>
           </Link>
 
-          <li
-            className={styles.lists}
-            onClick={() => scrollToSection(contactRef)}
-          >
-            Blog
-          </li>
+          <li className={styles.lists}>Blog</li>
 
           <Link to='/contactus'>
-            <li
-              className={styles.listcontact}
-              onClick={() => scrollToSection(contactRef)}
-            >
-              Contact Us
-            </li>
+            <li className={styles.listcontact}>Contact Us</li>
           </Link>
 
           <li className={styles.listmenu} onClick={sideBar}>
@@ -141,7 +110,6 @@ export default function NavBar({
               <li
                 className={styles.sidebarlist}
                 onClick={() => {
-                  scrollToSection(aboutRef);
                   onClose();
                 }}
               >
@@ -153,7 +121,6 @@ export default function NavBar({
               <li
                 className={styles.sidebarlist}
                 onClick={() => {
-                  scrollToSection(aboutRef);
                   onClose();
                 }}
               >
@@ -165,7 +132,6 @@ export default function NavBar({
               <li
                 className={styles.sidebarlist}
                 onClick={() => {
-                  scrollToSection(serviceRef);
                   onClose();
                 }}
               >
@@ -176,7 +142,6 @@ export default function NavBar({
             <li
               className={styles.sidebarlist}
               onClick={() => {
-                scrollToSection(aboutRef);
                 onClose();
               }}
             >
@@ -187,7 +152,6 @@ export default function NavBar({
               <li
                 className={styles.sidebarcontact}
                 onClick={() => {
-                  scrollToSection(contactRef);
                   onClose();
                 }}
               >

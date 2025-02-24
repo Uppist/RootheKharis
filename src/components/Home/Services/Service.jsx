@@ -43,7 +43,13 @@ export default function Service() {
                     <h2>{service.title}</h2>
                     <span>{service.description}</span>
                     {/* <Link to='/services'> */}
-                    <Link to='/services' state={{ serviceid: service.image }}>
+                    <Link
+                      to='/services'
+                      state={{
+                        serviceid:
+                          service.title.split(" ")[0] || "Other Services",
+                      }}
+                    >
                       <button className={styles.button} type='button'>
                         Read full details
                         <svg
