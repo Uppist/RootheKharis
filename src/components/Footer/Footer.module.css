@@ -161,6 +161,22 @@ a {
   gap: 32px;
 }
 
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  /* margin-left: 20px; */
+  position: relative;
+  left: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--font-source);
+  color: var(--color-primary);
+  margin-top: 40px;
+  text-align: center;
+}
+
 @media only screen and (max-width: 768px) {
   .details {
     flex-direction: column;
@@ -276,6 +292,9 @@ a {
   .design {
     width: 31px;
     height: 7px;
+  }
+  .label {
+    align-items: baseline;
   }
 }
 

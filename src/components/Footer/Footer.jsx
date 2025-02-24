@@ -29,7 +29,7 @@ export default function Footer() {
               </h2>
               <Svg />
 
-              <h3>Open hour</h3>
+              <h3>Open hours</h3>
               <span>Monday - Friday : 9:00 AM - 6:00 PM</span>
             </div>
 
@@ -112,16 +112,17 @@ export default function Footer() {
           </div>
         </div>
         <hr />
+        <div className={styles.label}>
+          <label>© Roothe Kharis 2025. All rights reserved</label>
 
-        <label>© Roothe Kharis 2025. All rights reserved</label>
-
-        <span>
-          <Designed />
-          <Link to='https://www.uppist.xyz/'>
-            {" "}
-            <Uppist />
-          </Link>
-        </span>
+          <span>
+            <Designed />
+            <Link to='https://www.uppist.xyz/'>
+              {" "}
+              <Uppist />
+            </Link>
+          </span>
+        </div>
       </div>
     </footer>
   );
