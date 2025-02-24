@@ -37,7 +37,7 @@ export default function Service() {
       } else if (otherServicesRef.current) {
         otherServicesRef.current.scrollIntoView({
           behavior: "smooth",
-          block: "start",
+          block: "center",
         });
       }
     }
