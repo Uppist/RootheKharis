@@ -2,25 +2,25 @@
 
 import React from "react";
 import styles from "./Service.module.css";
-import image1 from "../../../assets/Home/Service/Service1.png";
-import image2 from "../../../assets/Home/Service/Service2.png";
-import image3 from "../../../assets/Home/Service/Service3.png";
-import image4 from "../../../assets/Home/Service/Service4.png";
-import image5 from "../../../assets/Home/Service/Service5.png";
-import image6 from "../../../assets/Home/Service/Service6.png";
-import image7 from "../../../assets/Home/Service/Service7.png";
+import service1 from "../../../assets/Home/Service/Service1.png";
+import service2 from "../../../assets/Home/Service/Service3.png";
+import service3 from "../../../assets/Home/Service/Service2.png";
+import service4 from "../../../assets/Home/Service/Service4.png";
+import service5 from "../../../assets/Home/Service/Service5.png";
+import service6 from "../../../assets/Home/Service/Service6.png";
+import service7 from "../../../assets/Home/Service/Service7.png";
 import service from "./Service.json";
 import { Link } from "react-router-dom";
 
 export default function Service() {
   const imageMap = {
-    "image1.png": image1,
-    "image2.png": image2,
-    "image3.png": image3,
-    "image4.png": image4,
-    "image5.png": image5,
-    "image6.png": image6,
-    "image7.png": image7,
+    "service1.png": service1,
+    "service2.png": service2,
+    "service3.png": service3,
+    "service4.png": service4,
+    "service5.png": service5,
+    "service6.png": service6,
+    "service7.png": service7,
   };
   return (
     <div className={styles.background1}>
@@ -42,7 +42,8 @@ export default function Service() {
                   <div>
                     <h2>{service.title}</h2>
                     <span>{service.description}</span>
-                    <Link to='/services'>
+                    {/* <Link to='/services'> */}
+                    <Link to='/services' state={{ serviceid: service.image }}>
                       <button className={styles.button} type='button'>
                         Read full details
                         <svg

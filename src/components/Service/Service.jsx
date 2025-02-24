@@ -11,8 +11,32 @@ import service5 from "../../assets/Service/service5.png";
 import service6 from "../../assets/Service/service6.png";
 import service7 from "../../assets/Service/service7.png";
 import Mark from "./Mark";
+import { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function Service() {
+  const location = useLocation();
+  const serviceRefs = useRef({});
+
+  // Store refs for each service
+  service.forEach((data) => {
+    serviceRefs.current[data.image] = useRef(null);
+  });
+
+  useEffect(() => {
+    if (location.state?.serviceid) {
+      const targetElement = serviceRefs.current[location.state.serviceid];
+
+      if (targetElement) {
+        const isMobile = window.innerWidth <= 768;
+        targetElement.scrollIntoView({
+          behavior: "smooth",
+          block: isMobile ? "start" : "center",
+        });
+      }
+    }
+  }, [location.state]);
+
   const services = [
     "Immigration",
     "Tax advisory",
@@ -41,7 +65,11 @@ export default function Service() {
             </p>
           </div>
           {service.map((data, index) => (
-            <div className={styles.details}>
+            <div
+              className={styles.details}
+              ref={(el) => (serviceRefs.current[data.image] = el)}
+              key={data.image}
+            >
               <div className={styles.detail} key={index}>
                 <h2>{data.title}</h2>
                 <span>{data.subtitle}</span>

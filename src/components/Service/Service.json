@@ -1,5 +1,7 @@
 [
   {
+    "id": 0,
+
     "image": "service1.png",
     "title": "Real Estate & Construction",
     "p1": "Developing, constructing, or expanding a new business operation usually involves the acquisition of real estate properties.",
@@ -13,8 +15,10 @@
     "li7": "Executing lease agreements between various entities"
   },
   {
+    "id": 1,
+
     "image": "service2.png",
-    "title": "Corporate - Commercial",
+    "title": "Corporate & Commercial Law",
     "p1": "The dynamics and frameworks of laws, policies and regulation are continually evolving.",
     "p2": "Together with our clients, we craft bespoke legal solutions that meet the requirements of modern enterprises in the following ways:",
     "li1": "Company secretarial services",
@@ -27,6 +31,8 @@
     "li8": "Due diligence and sustainability reporting"
   },
   {
+    "id": 2,
+
     "image": "service3.png",
     "title": "Energy, Power, Infrastructure",
     "subtitle": "Shipping & Maritime Law:",
@@ -42,12 +48,16 @@
     "li8": "Carriage of goods"
   },
   {
+    "id": 3,
+
     "image": "service4.png",
     "title": "Venture Capital and Private Equity",
     "p1": "At Roothe-Kharis, we support the objectives of our clients by providing holistic advisory on transactions across the venture capital and private equity life cycle from the pre-transaction phase to exiting an investment.",
     "p2": "We are experienced in advising on relevant fund structures, sourcing and screening deals, conducting due diligence including corporate governance requirements, negotiating and structuring deals, and drafting transaction documents (such as valuation agreements, Offer Documents, Partnership Agreements, Trust Deeds, Constitution Documents, Management Agreements, Investment Subscription Agreements, Side Letters)."
   },
   {
+    "id": 4,
+
     "image": "service5.png",
     "title": "Labour and Employment Relations",
     "p1": "The fortification of various legislations and regulatory requirements pose uncertainties in the relationship between employers and employees.",
@@ -61,6 +71,8 @@
     "li7": "Health and Safety compliance"
   },
   {
+    "id": 5,
+
     "image": "service6.png",
     "title": "Intellectual Property - Advisory, Registration, Management, etc:",
     "p1": "Intellectual assets are the fabric of innovation which forms the bedrock of socio-economic advancements. At Roothe-Kharis & Partners, we have developed a strategic and practical approach to protecting and maximizing the values of our Clients’ various intellectual property assets.",
@@ -75,6 +87,8 @@
     "li8": "Intellectual property consultation and general advisory"
   },
   {
+    "id": 6,
+
     "image": "service7.png",
     "title": "Alternative Dispute Resolution Services",
     "p1": "At Roothe - Kharis & Partners, we understand that time is a valuable resource and we explore several alternatives in resolving disputes while focused on the interest and objectives of our Clients. We employ strategies beyond negotiation, litigation, mediation, conciliation and arbitration to minimize costs.s"
