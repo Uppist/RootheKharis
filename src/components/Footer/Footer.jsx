@@ -66,7 +66,7 @@ export default function Footer() {
                   />
                 </svg>
 
-                <span>info@roothekharis.com</span>
+                <span>adesua.e@roothekharis.com </span>
               </div>
               <div className={styles.location}>
                 <svg
@@ -115,7 +115,7 @@ export default function Footer() {
         <div className={styles.label}>
           <label>© Roothe Kharis 2025. All rights reserved</label>
 
-          <span>
+          <span className={styles.span}>
             <Designed />
             <Link to='https://www.uppist.xyz/'>
               {" "}

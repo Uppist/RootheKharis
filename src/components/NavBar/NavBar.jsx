@@ -139,14 +139,7 @@ export default function NavBar({}) {
               </li>
             </Link>
             <hr />
-            <li
-              className={styles.sidebarlist}
-              onClick={() => {
-                onClose();
-              }}
-            >
-              Blog{" "}
-            </li>
+            <li className={styles.sidebarlist}>Blog </li>
             <hr />
             <Link to='/contactus'>
               <li

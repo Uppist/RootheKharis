@@ -167,7 +167,7 @@ a {
   gap: 8px;
   /* margin-left: 20px; */
   /* position: relative; */
-  /* left: 20px; */
+  left: 20px;
   margin-bottom: 20px;
   font-size: 14px;
   font-weight: 400;
@@ -217,8 +217,12 @@ a {
     padding: 50px 25px;
   }
 
+  .span {
+    display: flex;
+    gap: 2px;
+  }
   .uppist {
-    width: 24px;
+    width: 45px;
   }
   .details,
   .footer2 {
@@ -290,11 +294,14 @@ a {
   }
 
   .design {
-    width: 31px;
-    height: 7px;
+    width: 40px;
+    height: 10px;
+    margin-top: 2px;
   }
   .label {
     align-items: baseline;
+    position: relative;
+    left: 18px;
   }
 }
 

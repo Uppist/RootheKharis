@@ -216,6 +216,10 @@
     top: 25px;
     border: 2px solid var(--color-bg);
   }
+  .details:nth-of-type(7) .detail h2::before {
+    top: 45px !important;
+    border: 2px solid var(--color-bg);
+  }
 
   .mark svg {
     width: 10px;
