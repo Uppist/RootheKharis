@@ -14193,10 +14193,10 @@ function Lc() {
     ],
   });
 }
-const jc = "_purpose_1ww6i_5",
-  Mc = "_text_1ww6i_19",
-  Tc = "_button_1ww6i_65",
-  Rc = "_img_1ww6i_107",
+const jc = "_purpose_1s3nb_5",
+  Mc = "_text_1s3nb_19",
+  Tc = "_button_1s3nb_65",
+  Rc = "_img_1s3nb_107",
   c9 = { purpose: jc, text: Mc, button: Tc, img: Rc },
   Ac = "./assets/Purpose-0rdKMhrl.png";
 function Oc() {
@@ -14263,13 +14263,13 @@ function Oc() {
     ],
   });
 }
-const zc = "_service_gsduc_5",
-  Dc = "_background1_gsduc_29",
-  wc = "_background2_gsduc_41",
-  Nc = "_texts_gsduc_55",
-  Uc = "_services_gsduc_105",
-  Vc = "_one_gsduc_121",
-  Bc = "_button_gsduc_233",
+const zc = "_service_14u42_5",
+  Dc = "_background1_14u42_29",
+  wc = "_background2_14u42_41",
+  Nc = "_texts_14u42_55",
+  Uc = "_services_14u42_105",
+  Vc = "_one_14u42_121",
+  Bc = "_button_14u42_241",
   R3 = {
     service: zc,
     background1: Dc,
@@ -14299,42 +14299,42 @@ const zc = "_service_gsduc_5",
       image: "service2.png",
       title: "Corporate & Commercial Law",
       description:
-        "We provide expert legal services in business structuring, mergers, acquisitions, and corporate governance.",
+        "The dynamics and frameworks of laws, policies and regulation are continually evolving. Together with our clients, we craft bespoke legal...",
     },
     {
       id: 2,
       image: "service3.png",
-      title: "Intellectual Property Law",
+      title: "Energy, Power, Infrastructure",
       description:
-        "Protect your brand, patents, and creative assets with our comprehensive intellectual property legal services.",
+        "Roothe - Kharis & Partners provide services to Clients across a spectrum of the shipping and maritime industry including ship owners, ship managers etc.",
     },
     {
       id: 3,
       image: "service4.png",
-      title: "Banking & Finance",
+      title: "Venture Capital and Private Equity",
       description:
-        "Offering advisory services on financial regulations, investments, and banking legalities.",
+        "At Roothe-Kharis, we support the objectives of our clients by providing holistic advisory on transactions across the venture capital and private equity life cycle from the...",
     },
     {
       id: 4,
       image: "service5.png",
       title: "Labour and Employment Relations",
       description:
-        "Guidance on labor disputes, employment contracts, and workplace policies.",
+        "Roothe-Kharis & Partners provide sound, practical and comprehensive solutions to SMEs and Large corporations across banking, oil and gas, construction...",
     },
     {
       id: 5,
       image: "service6.png",
-      title: "Tax & Regulatory Compliance",
+      title: "Intellectual Property - Advisory,Registration, Management, etc:",
       description:
-        "Ensuring businesses stay compliant with tax laws and regulatory requirements.",
+        "At Roothe-Kharis & Partners, we have developed a strategic and practical approach to protecting and...",
     },
     {
       id: 6,
       image: "service7.png",
       title: "Alternative Dispute Resolution Services",
       description:
-        "Helping clients resolve disputes through arbitration and legal mediation services.",
+        "At Roothe – Kharis & Partners, we understand that time is a valuable resource and we explore several alternatives in resolving disputes while focused on...",
     },
   ];
 function Jc() {
@@ -14955,9 +14955,7 @@ function m9() {
                             fill: "white",
                           }),
                         }),
-                        s.jsx("span", {
-                          children: "adesua.e@roothekharis.com ",
-                        }),
+                        s.jsx("span", { children: "info@roothekharis.com " }),
                       ],
                     }),
                     s.jsxs("div", {
@@ -15220,17 +15218,17 @@ function ws() {
     children: [s.jsx(h9, {}), s.jsx(Ds, {}), s.jsx(m9, {})],
   });
 }
-const Ns = "_bg1_gylkl_5",
-  Us = "_bg2_gylkl_19",
-  Vs = "_service_gylkl_33",
-  Bs = "_texts_gylkl_59",
-  Zs = "_details_gylkl_117",
-  qs = "_detail_gylkl_117",
-  Ys = "_lists_gylkl_225",
-  Gs = "_mark_gylkl_237",
-  Xs = "_h2_gylkl_263",
-  Qs = "_container_gylkl_285",
-  Ks = "_item_gylkl_303",
+const Ns = "_bg1_1p5xa_5",
+  Us = "_bg2_1p5xa_19",
+  Vs = "_service_1p5xa_33",
+  Bs = "_texts_1p5xa_59",
+  Zs = "_details_1p5xa_117",
+  qs = "_detail_1p5xa_117",
+  Ys = "_lists_1p5xa_225",
+  Gs = "_mark_1p5xa_237",
+  Xs = "_h2_1p5xa_263",
+  Qs = "_container_1p5xa_285",
+  Ks = "_item_1p5xa_303",
   M2 = {
     bg1: Ns,
     bg2: Us,
@@ -15493,8 +15491,8 @@ function tf() {
     children: [s.jsx(h9, {}), s.jsx(ef, {}), s.jsx(m9, {})],
   });
 }
-const lf = "_bg_1ms4n_5",
-  af = "_bg2_1ms4n_17",
+const lf = "_bg_10ibp_5",
+  af = "_bg2_10ibp_17",
   Xl = { bg: lf, bg2: af },
   nf = "_commit_90o6r_5",
   uf = "_mark_90o6r_55",
