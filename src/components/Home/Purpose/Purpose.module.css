@@ -61,6 +61,11 @@
     align-items: center;
   }
 
+  .text div {
+    position: absolute;
+    margin-top: -610px;
+  }
+
   .text label {
     font-size: 16px;
   }

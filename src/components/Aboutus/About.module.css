@@ -12,3 +12,15 @@
   background-position-y: 1130px;
   background-size: 620px;
 }
+
+@media only screen and (max-width: 768px) {
+  .bg {
+    background-repeat: space;
+    background-size: contain;
+    background-position-x: center;
+  }
+
+  .bg2 {
+    background: none;
+  }
+}

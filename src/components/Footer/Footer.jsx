@@ -66,7 +66,7 @@ export default function Footer() {
                   />
                 </svg>
 
-                <span>adesua.e@roothekharis.com </span>
+                <span>info@roothekharis.com </span>
               </div>
               <div className={styles.location}>
                 <svg
