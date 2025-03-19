@@ -19,6 +19,8 @@ body::-webkit-scrollbar {
   --color-text3: hsla(245, 14%, 49%, 1);
   --color-bg: hsla(29, 43%, 52%, 1);
   --color-bg2: hsla(228, 100%, 99%, 1);
+  --color-blog: hsla(258, 54%, 52%, 1);
+  --color-blog-text: hsla(220, 13%, 46%, 1);
 
   /* Fonts */
   /* --font-inter: "Inter"; */

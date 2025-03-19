@@ -55,7 +55,6 @@
   border-radius: 8px;
   font-weight: 700;
   color: var(--color-primary);
-  text-transform: uppercase;
 }
 .flmobile {
   display: none;
@@ -160,14 +159,14 @@
     margin-top: 40px;
     margin-left: 30px;
     background-color: var(--color-bg);
-    font-size: 18px;
+    font-size: 16px;
     font-family: var(--font-source);
     padding: 12px 20px;
     border-radius: 8px;
     font-weight: 600;
     color: var(--color-primary);
-    text-transform: uppercase;
-    width: 145px;
+    /* text-transform: uppercase; */
+    width: fit-content;
     text-align: center;
   }
 }

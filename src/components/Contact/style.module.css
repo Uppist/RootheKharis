@@ -17,17 +17,27 @@
   gap: 32px;
   margin-top: 100px;
 }
-
-.form > h2 {
-  font-size: 48px;
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form h2 {
+  font-size: 18px;
   font-weight: 700;
-  color: var(--color-text2);
-  font-family: var(--font-fair);
+  color: var(--color-primary);
+  font-family: var(--font-source);
   /* text-transform: uppercase; */
+  cursor: pointer;
   margin: 0;
+  width: fit-content;
+  padding: 18px 56px;
+  border-radius: 8px;
+  background-color: var(--color-bg);
 }
 
 .form label {
+  margin-top: 20px;
   font-size: 24px;
   font-weight: 600;
   color: var(--color-bg);
@@ -183,7 +193,7 @@ form {
   }
 
   .form h2 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .form label {
@@ -219,6 +229,7 @@ form {
 
   .submit {
     font-size: 16px;
-    padding: 12px 24px;
+    padding: 12px 56px;
+    width: fit-content;
   }
 }

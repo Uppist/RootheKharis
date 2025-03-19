@@ -1,0 +1,53 @@
+/** @format */
+
+import React, { useState } from "react";
+import styles from "./style.module.css";
+import image from "../../assets/Blog/image2.jpg";
+import { Link } from "react-router-dom";
+import blog from "./Blog.json";
+
+export default function Blog() {
+  const ImageMap = {
+    "image1.jpg": image,
+  };
+  return (
+    <section className={styles.blog}>
+      <div className={styles.texts}>
+        <label htmlFor=''>Latest Article</label>
+        <h2>Blog Posts</h2>
+      </div>
+      <div className={styles.container}>
+        {blog.map((data, index) => (
+          <div className={styles.container1} key={index}>
+            <img src={ImageMap[data.image]} alt='' />
+            <div>
+              <label htmlFor=''>By Admin • 20 Feb 2025</label>
+              <div className={styles.h3}>
+                <h3>{data.title}</h3>
+                <Link to='/blog-details'>
+                  <svg
+                    width='12'
+                    height='12'
+                    viewBox='0 0 12 12'
+                    fill='none'
+                    xmlns='http://www.w3.org/2000/svg'
+                  >
+                    <path
+                      d='M1 11L11 1M11 1H1M11 1V11'
+                      stroke='#B8824F'
+                      stroke-width='2'
+                      stroke-linecap='round'
+                      stroke-linejoin='round'
+                    />
+                  </svg>
+                </Link>
+              </div>
+
+              <span>{data.text}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}

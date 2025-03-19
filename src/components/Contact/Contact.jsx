@@ -7,6 +7,7 @@ import React, { useState, useEffect, useRef } from "react";
 // import "react-toastify/dist/ReactToastify.css";
 import styles from "./style.module.css";
 import image from "../../assets/Contact/contact.png";
+import { Link } from "react-router-dom";
 
 // import { ToastContainer, toast } from "react-toastify";
 
@@ -69,8 +70,10 @@ export default function Contact() {
       </div>
       <div className={styles.touch}>
         <div className={styles.form}>
-          <h2>Get in Touch</h2>
-          <label>Use the form below to contact us</label>
+          <Link to='https://calendly.com/roothekharispartners/30min'>
+            <h2>Book a session</h2>
+          </Link>
+          <label>Or Fill the form below and we will contact you swiftly.</label>
         </div>
         {/* <form onSubmit={sendEmail} ref={form}> */}
         <form>

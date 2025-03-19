@@ -35,10 +35,11 @@ export default function NavBar({}) {
             <li className={styles.lists}>Services </li>
           </Link>
 
-          <li className={styles.lists}>Blog</li>
-
+          <Link to='/blog'>
+            <li className={styles.lists}>Blog</li>
+          </Link>
           <Link to='/contactus'>
-            <li className={styles.listcontact}>Contact Us</li>
+            <li className={styles.listcontact}>Book a Consultation</li>
           </Link>
 
           <li className={styles.listmenu} onClick={sideBar}>
@@ -139,7 +140,9 @@ export default function NavBar({}) {
               </li>
             </Link>
             <hr />
-            <li className={styles.sidebarlist}>Blog </li>
+            <Link to='/blog'>
+              <li className={styles.sidebarlist}>Blog </li>
+            </Link>
             <hr />
             <Link to='/contactus'>
               <li
@@ -148,7 +151,7 @@ export default function NavBar({}) {
                   onClose();
                 }}
               >
-                Contact Us
+                Book a Consultation
               </li>
             </Link>
           </ul>
