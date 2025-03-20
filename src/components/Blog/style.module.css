@@ -126,6 +126,25 @@ svg {
   font-weight: 600;
 }
 
+.help {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-text);
+
+  font-style: italic;
+}
+
+.help a {
+  color: var(--color-text);
+}
+
+.help p {
+  margin: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
   .blog {
     background-size: 280px;
@@ -174,5 +193,9 @@ svg {
   .intro {
     padding: 0 30px;
     font-size: 16px;
+  }
+
+  .help {
+    font-size: 12px;
   }
 }

@@ -35,8 +35,8 @@ export default function NavBar({}) {
             <li className={styles.lists}>Services </li>
           </Link>
 
-          <Link to='/blog'>
-            <li className={styles.lists}>Blog</li>
+          <Link to='/Articles'>
+            <li className={styles.lists}>Articles</li>
           </Link>
           <Link to='/contactus'>
             <li className={styles.listcontact}>Book a Consultation</li>
@@ -140,8 +140,8 @@ export default function NavBar({}) {
               </li>
             </Link>
             <hr />
-            <Link to='/blog'>
-              <li className={styles.sidebarlist}>Blog </li>
+            <Link to='/Articles'>
+              <li className={styles.sidebarlist}>Articles </li>
             </Link>
             <hr />
             <Link to='/contactus'>

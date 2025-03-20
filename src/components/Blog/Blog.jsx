@@ -21,7 +21,7 @@ export default function Blog() {
           <div className={styles.container1} key={index}>
             <img src={ImageMap[data.image]} alt='' />
             <div>
-              <label htmlFor=''>By Admin • 20 Feb 2025</label>
+              <label htmlFor=''>19 Mar 2025</label>
               <div className={styles.h3}>
                 <h3>{data.title}</h3>
                 <Link to='/blog-details'>

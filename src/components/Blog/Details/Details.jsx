@@ -4,6 +4,7 @@ import styles from "../style.module.css";
 import image2 from "../../../assets/Blog/image1.jpg";
 
 import blog from "../Blog.json";
+import { Link } from "react-router-dom";
 export default function Details() {
   const ImageMap = {
     "image2.jpg": image2,
@@ -18,7 +19,7 @@ export default function Details() {
             <img src={ImageMap[data.image2]} alt='' />
             <div>
               <div className={styles.admin}>
-                <span>Admin</span>
+                {/* <span>Admin</span> */}
                 <span>19 March 2025</span>
               </div>
               <div className={styles.intro}>
@@ -57,6 +58,12 @@ export default function Details() {
                 </b>
                 <span>{data.sections[3]?.content}</span>
                 <span>{data.sections[3]?.content2}</span>
+                <span className={styles.help}>
+                  Do you need help?{" "}
+                  <Link to='https://calendly.com/roothekharispartners/30min'>
+                    <p>Book a consultation.</p>
+                  </Link>
+                </span>
               </div>
 
               {/* <div>
