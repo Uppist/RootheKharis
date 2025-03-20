@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import styles from "./style.module.css";
 import image from "../../assets/Blog/image2.jpg";
 import { Link } from "react-router-dom";
@@ -10,6 +10,10 @@ export default function Blog() {
   const ImageMap = {
     "image1.jpg": image,
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section className={styles.blog}>
       <div className={styles.texts}>

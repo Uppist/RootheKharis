@@ -1,5 +1,5 @@
 /** @format */
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "../style.module.css";
 import image2 from "../../../assets/Blog/image3.jpg";
 
@@ -9,6 +9,9 @@ export default function Details() {
   const ImageMap = {
     "image2.jpg": image2,
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className={styles.detail}>
       <div className={styles.texts}>

@@ -68,7 +68,7 @@ export default function Footer() {
 
                 <span>info@roothekharis.com </span>
               </div>
-              <div className={styles.location}>
+              <div>
                 <svg
                   width='16'
                   height='20'
@@ -103,7 +103,9 @@ export default function Footer() {
                 <Link to='/services'>
                   <li>Our Services</li>
                 </Link>
-                <li>Blog</li>
+                <Link to='/Articles'>
+                  <li>Articles</li>
+                </Link>
                 <Link to='/contactus'>
                   <li>Contact Us</li>
                 </Link>
