@@ -1,7 +1,7 @@
 /** @format */
 import React from "react";
 import styles from "../style.module.css";
-import image2 from "../../../assets/Blog/image1.jpg";
+import image2 from "../../../assets/Blog/image3.jpg";
 
 import blog from "../Blog.json";
 import { Link } from "react-router-dom";
