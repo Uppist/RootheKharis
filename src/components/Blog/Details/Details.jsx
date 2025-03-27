@@ -2,81 +2,85 @@
 import React, { useEffect } from "react";
 import styles from "../style.module.css";
 import image2 from "../../../assets/Blog/image3.jpg";
+import landlord from "../../../assets/Blog/landlords.jpg";
+import estate2 from "../../../assets/Blog/estate2.jpg";
+import deed2 from "../../../assets/Blog/deed2.jpg";
 
-import blog from "../Blog.json";
-import { Link } from "react-router-dom";
+
+import { Link, useLocation } from "react-router-dom";
+
 export default function Details() {
   const ImageMap = {
     "image2.jpg": image2,
+    "landlord2.jpg": landlord,
+    "estate2.jpg":estate2
   };
+  
+
+  const location = useLocation();
+  const { data } = location.state || {};
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  if (!data) return <p>Loading...</p>;
+
+  // console.log("Sections Data:", data.sections[0]?.headings);
+
+  console.log("Data Object:", data);
+  console.log("Content:", data.content);
+  
   return (
     <section className={styles.detail}>
       <div className={styles.texts}>
-        {blog.map((data, index) => (
-          <div>
-            <label htmlFor=''>Latest Article</label>
-            <h2>{data.title}</h2>
-            <img src={ImageMap[data.image2]} alt='' />
-            <div>
-              <div className={styles.admin}>
-                {/* <span>Admin</span> */}
-                <span>19 March 2025</span>
-              </div>
-              <div className={styles.intro}>
-                <span>{data.sections[0]?.content1}</span>
-                <span>{data.sections[0]?.content2}</span>
-                <span>{data.sections[0]?.content3}</span>
-                <span>
-                  <b>{data.sections[1]?.heading}</b>
-                </span>
-                <span>{data.sections[1]?.content}</span>
-                <span>{data.sections[1]?.content2}</span>
-                <span>
-                  <b>{data.sections[2]?.heading}</b>
-                </span>
-                <ol>
-                  <li>
-                    <b>{data.sections[2]?.points?.[0]?.title} </b>
-                    {data.sections[2]?.points?.[0]?.description}
-                  </li>{" "}
-                  <li>
-                    <b> {data.sections[2]?.points?.[1]?.title} </b>
-                    {data.sections[2]?.points?.[1]?.description}
-                  </li>{" "}
-                  <li>
-                    <b>{data.sections[2]?.points?.[2]?.title} </b>
-                    {data.sections[2]?.points?.[2]?.description}
-                  </li>{" "}
-                  <li>
-                    <b>{data.sections[2]?.points?.[3]?.title} </b>
-                    {data.sections[2]?.points?.[3]?.description}
-                  </li>{" "}
-                </ol>
-                <b>
-                  {" "}
-                  <span>{data.sections[3]?.heading}</span>
-                </b>
-                <span>{data.sections[3]?.content}</span>
-                <span>{data.sections[3]?.content2}</span>
-                <span className={styles.help}>
-                  Do you need help?{" "}
-                  <Link to='https://calendly.com/roothekharispartners/30min'>
-                    <p>Book a consultation.</p>
-                  </Link>
-                </span>
-              </div>
+        <label htmlFor=''>Latest Article</label>
+        <h2>{data.title}</h2>
 
-              {/* <div>
-                {data.sections.map((section, index) => (
-                  <span>{section.heading[0]}</span>
-                ))}
-              </div> */}
-            </div>
-          </div>
-        ))}
+        {data.image2 && (
+          <img src={ImageMap[data.image2] || data.image2} alt={data.title} />
+        )}
+
+        <div className={styles.admin}>
+          <span>{data.date}</span>
+        </div>
+
+        <div className={styles.intro}>
+          {/* {data.sections?.map((section, index) => ( */}
+            {/* // <div key={index}> */}
+      <div dangerouslySetInnerHTML={{ __html: data.content }} />
+      
+      {/* {section?.headings && <span><b>{section?.headings}</b></span>}
+              
+              {section.heading && <span><b>{section.heading}</b></span>}
+              {section.content && <span>{section.content}</span>}
+              {section.content2 && <span>{section.content2}</span>}
+              {section.content3 && <span>{section.content3}</span>}
+              {section.content4 && <span>{section.content4}</span>}
+              {section.content5 && <span>{section.content5}</span>}
+              {section.content6 && <span>{section.content6}</span>}
+              
+
+              
+              {section.points && (
+                <ol>
+                  {section.points.map((point, idx) => (
+                    <li key={idx}>
+                      <b>{point.title}</b> {point.description}
+                    </li>
+                  ))}
+                </ol>
+              )} */}
+            {/* </div> */}
+          {/* ))} */}
+        </div>
+
+        <span className={styles.help}>
+          Do you need help?{" "}
+          <Link to='https://calendly.com/roothekharispartners/30min'>
+            <p>Book a consultation.</p>
+          </Link>
+        </span>
       </div>
     </section>
   );

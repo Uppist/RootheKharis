@@ -9,9 +9,12 @@ import Aboutus from "./components/Aboutus/Aboutus";
 import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import Blogs from "./components/Blog/Blogs";
 import Detail from "./components/Blog/Details/Detail";
+import WhatsAppIcon from "./Svg";
 
 export default function App() {
   return (
+    <>
+    <WhatsAppIcon/>
     <HashRouter>
       <Routes>
         <Route path='/' element={<Home />} />
@@ -22,6 +25,7 @@ export default function App() {
         <Route path='/contactus' element={<Contactus />} />
       </Routes>
     </HashRouter>
+    </>
     // <>
     //   {/* <Services /> */}
     //   {/* <Contactus /> */}
