@@ -14,17 +14,17 @@ import WhatsAppIcon from "./Svg";
 export default function App() {
   return (
     <>
-    <WhatsAppIcon/>
-    <HashRouter>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/aboutus' element={<Aboutus />} />
-        <Route path='/services' element={<Services />} />
-        <Route path='/Articles' element={<Blogs />} />
-        <Route path='/blog-details' element={<Detail />} />
-        <Route path='/contactus' element={<Contactus />} />
-      </Routes>
-    </HashRouter>
+      <WhatsAppIcon />
+      <HashRouter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/aboutus' element={<Aboutus />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/Articles' element={<Blogs />} />
+          <Route path='/blog-details' element={<Detail />} />
+          <Route path='/contactus' element={<Contactus />} />
+        </Routes>
+      </HashRouter>
     </>
     // <>
     //   {/* <Services /> */}

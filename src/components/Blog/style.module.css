@@ -53,6 +53,7 @@
   box-shadow: 0px 5px 7px hsla(0, 0%, 0%, 0.04);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  border: 1px solid var(--color-bg);
 }
 
 .container1 > div {
@@ -123,10 +124,10 @@ svg {
   padding: 0 100px;
 }
 
-.intro div{
+.intro div {
   display: flex;
-    flex-direction: column;
-    gap: 16px;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .admin {
@@ -144,7 +145,7 @@ svg {
   align-items: center;
   gap: 4px;
   color: var(--color-text);
-
+  margin-top: 40px;
   font-style: italic;
 }
 
@@ -156,6 +157,25 @@ svg {
   margin: 0;
   text-decoration: underline;
   cursor: pointer;
+  font-family: var(--font-source);
+}
+
+.button {
+  margin-top: 50px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: -webkit-fill-available;
+  padding: 0 50px;
+}
+
+.button button {
+  background-color: white;
+  border: 1px solid var(--color-bg);
+  padding: 12px 24px;
+  color: var(--color-bg);
+  font-family: var(--font-source);
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 768px) {
