@@ -31,7 +31,6 @@ export default function Details() {
     // Disable right-click for the entire document
     const disableRightClick = (event) => event.preventDefault();
     document.addEventListener("contextmenu", disableRightClick);
-    alert("done");
 
     return () => {
       document.removeEventListener("contextmenu", disableRightClick);
