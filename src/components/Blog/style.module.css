@@ -144,8 +144,9 @@ svg {
 
 .help {
   display: flex;
+  flex-direction: column;
+  gap: 24px;
   align-items: center;
-  gap: 4px;
   color: var(--color-text);
   margin-top: 40px;
 }

@@ -88,7 +88,7 @@ export default function Details() {
           <Link to='https://calendly.com/roothekharispartners/30min'>
             <p>Book a consultation.</p>
           </Link>
-          <span>(c) Roothe-Kharis & Partners</span>
+          <span>© Roothe-Kharis & Partners</span>
         </span>
 
         {/* <div className={styles.button}>
