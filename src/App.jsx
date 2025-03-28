@@ -14,8 +14,9 @@ import WhatsAppIcon from "./Svg";
 export default function App() {
   return (
     <>
-      <WhatsAppIcon />
       <HashRouter>
+        <WhatsAppIcon />
+
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/aboutus' element={<Aboutus />} />

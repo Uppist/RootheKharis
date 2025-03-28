@@ -64,7 +64,7 @@
 }
 
 .container1 img {
-  width: 384px;
+  /* width: 384px; */
 }
 
 .container1 > div > label {
@@ -157,6 +157,7 @@ svg {
   margin: 0;
   text-decoration: underline;
   cursor: pointer;
+  font-size: 18px;
   font-family: var(--font-source);
 }
 

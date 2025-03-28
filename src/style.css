@@ -8,6 +8,12 @@ body {
   padding: 0;
 }
 
+.svg2 {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
