@@ -109,7 +109,6 @@ svg {
   background: url("../../assets/bg1.png") space;
   background-repeat: repeat-y;
   user-select: none;
-  pointer-events: none;
 }
 
 .intro {
