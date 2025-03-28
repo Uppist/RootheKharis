@@ -7,7 +7,7 @@
   flex-direction: column;
   gap: 158px;
   user-select: none;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 .texts {
@@ -148,7 +148,6 @@ svg {
   gap: 4px;
   color: var(--color-text);
   margin-top: 40px;
-  font-style: italic;
 }
 
 .help a {
@@ -159,7 +158,13 @@ svg {
   margin: 0;
   text-decoration: underline;
   cursor: pointer;
+  font-style: italic;
+  font-weight: 400;
   font-size: 18px;
+  font-family: var(--font-source);
+}
+
+.help span {
   font-family: var(--font-source);
 }
 
