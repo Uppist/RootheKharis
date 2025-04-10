@@ -5,6 +5,9 @@ import image2 from "../../../assets/Blog/image3.jpg";
 import landlord from "../../../assets/Blog/landlords.jpg";
 import estate2 from "../../../assets/Blog/estate2.jpg";
 import deed2 from "../../../assets/Blog/deed2.jpg";
+import fixed2 from "../../../assets/Blog/fixed2.jpg";
+// import arrrow from "../../../assets/akar-icons_arrow-right-thin.svg";
+// import arr from "../../../assets/akar-icons_arrow-left-thin.svg";
 
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
@@ -14,6 +17,7 @@ export default function Details() {
     "landlord2.jpg": landlord,
     "estate2.jpg": estate2,
     "deed2.jpg": deed2,
+    "fixed2.jpg": fixed2,
   };
 
   const location = useLocation();
@@ -36,14 +40,32 @@ export default function Details() {
       document.removeEventListener("contextmenu", disableRightClick);
     };
   }, []);
-  // const currentIndex = link.findIndex((item) => item.link === data.link);
-  // console.log(currentIndex, "currentIndex");
 
   function goToNext() {
-    console.log("current path", location.pathname);
+    if (!link) {
+      console.error("The 'link' array is undefined.");
+      return;
+    }
+
+    const currentIndex = link.findIndex((item) => item.link === data.link);
+    if (currentIndex < link.length - 1) {
+      const nextArticle = link[currentIndex + 1];
+      navigate("/blog-details", { state: { data: nextArticle, link } });
+    }
   }
 
-  function previous() {}
+  function goToPrevious() {
+    if (!link) {
+      console.error("The 'link' array is undefined.");
+      return;
+    }
+
+    const currentIndex = link.findIndex((item) => item.link === data.link);
+    if (currentIndex > 0) {
+      const previousArticle = link[currentIndex - 1];
+      navigate("/blog-details", { state: { data: previousArticle, link } });
+    }
+  }
   return (
     <section className={styles.detail}>
       <div className={styles.texts}>
@@ -56,33 +78,7 @@ export default function Details() {
           <span>{data.date}</span>
         </div>
         <div className={styles.intro}>
-          {/* {data.sections?.map((section, index) => ( */}
-          {/* // <div key={index}> */}
           <div dangerouslySetInnerHTML={{ __html: data.content }} />
-
-          {/* {section?.headings && <span><b>{section?.headings}</b></span>}
-              
-              {section.heading && <span><b>{section.heading}</b></span>}
-              {section.content && <span>{section.content}</span>}
-              {section.content2 && <span>{section.content2}</span>}
-              {section.content3 && <span>{section.content3}</span>}
-              {section.content4 && <span>{section.content4}</span>}
-              {section.content5 && <span>{section.content5}</span>}
-              {section.content6 && <span>{section.content6}</span>}
-              
-
-              
-              {section.points && (
-                <ol>
-                  {section.points.map((point, idx) => (
-                    <li key={idx}>
-                      <b>{point.title}</b> {point.description}
-                    </li>
-                  ))}
-                </ol>
-              )} */}
-          {/* </div> */}
-          {/* ))} */}
         </div>
         <span className={styles.help}>
           <Link to='https://calendly.com/roothekharispartners/30min'>
@@ -90,11 +86,10 @@ export default function Details() {
           </Link>
           <span>© Roothe-Kharis & Partners</span>
         </span>
-
-        {/* <div className={styles.button}>
-          <button>Previous</button>
+        <div className={styles.button}>
+          <button onClick={goToPrevious}>Previous</button>
           <button onClick={goToNext}>Next</button>
-        </div>{" "} */}
+        </div>{" "}
       </div>
     </section>
   );
