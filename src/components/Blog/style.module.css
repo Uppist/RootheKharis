@@ -209,6 +209,7 @@ svg {
 
   .container1 img {
     width: 314px;
+    margin: 0 auto;
   }
 
   .h3 h3 {
@@ -239,5 +240,13 @@ svg {
 
   .help {
     font-size: 12px;
+  }
+
+  .button {
+    flex-direction: row;
+  }
+
+  .button button {
+    padding: 8px 12px;
   }
 }

@@ -26,7 +26,7 @@ export default function Details() {
   console.log(location.state);
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [data]);
 
   if (!data) return <p>Loading...</p>;
   useEffect(() => {
