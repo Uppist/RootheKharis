@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+
+.testimonialSection {
+  background-color: #FFFFFF;
+  padding: 40px 0; /* Already updated to remove left/right padding */
+  text-align: center;
+  overflow-x: visible; /* Allow cards to extend beyond viewport */
+}
+
+.heading {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 50px;
+  color: #233E81;
+  margin-bottom: 40px;
+}
+
+.testimonialContainer {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+.testimonialCard {
+  background-color: #233E81;
+  border-radius: 16px;
+  padding: 24px;
+  width: 485px;
+  height: 170px;
+  /* position: relative; */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  /* align-items: center; */
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+/* Inner container to constrain content within viewport */
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('../../../assets/quote-icon.svg') no-repeat;
+  background-size: 80px;
+  background-position-x: left;
+  background-position-y: top;
+}
+
+.quoteText {
+  font-family: "Source Sans 3";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 100%;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 2%;
+}
+
+/* .quoteIcon {
+  font-family: "Playfair Display", serif;
+  font-size: 170px;
+  color: #FFFFFF;
+  opacity: 0.3;
+  position: absolute;
+  right: 280px;
+  bottom: 20px;
+} */

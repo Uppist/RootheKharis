@@ -7,6 +7,7 @@ import landlord from "../../assets/Blog/lanlordover.jpg";
 import estate from "../../assets/Blog/estate.jpg";
 import deed from "../../assets/Blog/deed.jpg";
 import fixed from "../../assets/Blog/fixed.jpg";
+import joint1 from "../../assets/Blog/joint2.jpg";
 
 import { Link, useNavigate } from "react-router-dom";
 import blog from "./Blog.json";
@@ -18,6 +19,7 @@ export default function Blog() {
     "estate.jpg": estate,
     "fixed.jpg": fixed,
     "deed.jpg": deed,
+    "joint1.jpg": joint1,
   };
   useEffect(() => {
     window.scrollTo(0, 0);
