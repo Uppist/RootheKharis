@@ -9,7 +9,7 @@ import service4 from "../../../assets/Home/Service/Service4.png";
 import service5 from "../../../assets/Home/Service/Service5.png";
 import service6 from "../../../assets/Home/Service/Service6.png";
 import service7 from "../../../assets/Home/Service/Service7.png";
-import service8 from "../../../assets/Home/Service/Service8.png";
+import service8 from "../../../assets/Home/Service/service8.png";
 import service from "./Service.json";
 import { Link } from "react-router-dom";
 
