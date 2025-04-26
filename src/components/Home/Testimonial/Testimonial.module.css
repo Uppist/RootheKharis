@@ -3,9 +3,9 @@
 
 .testimonialSection {
   background-color: #FFFFFF;
-  padding: 40px 0; /* Already updated to remove left/right padding */
+  padding: 40px 0;
   text-align: center;
-  overflow-x: visible; /* Allow cards to extend beyond viewport */
+  overflow-x: visible;
 }
 
 .heading {
@@ -27,17 +27,13 @@
   border-radius: 16px;
   padding: 24px;
   width: 485px;
-  height: 170px;
-  /* position: relative; */
+  height: 150px;
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
-  /* align-items: center; */
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
 }
 
-/* Inner container to constrain content within viewport */
 .cardContent {
   display: flex;
   flex-direction: column;
@@ -47,6 +43,19 @@
   background-size: 80px;
   background-position-x: left;
   background-position-y: top;
+}
+
+.testimonialCard:nth-child(2) .cardContent {
+  background-position-x: 5px;
+  background-position-y: top;
+  padding-right: 90px;
+}
+
+.testimonialCard:nth-child(2) .cardContent .quoteText{
+  padding-left: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .quoteText {
@@ -59,12 +68,47 @@
   letter-spacing: 2%;
 }
 
-/* .quoteIcon {
-  font-family: "Playfair Display", serif;
-  font-size: 170px;
-  color: #FFFFFF;
-  opacity: 0.3;
-  position: absolute;
-  right: 280px;
-  bottom: 20px;
-} */
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 28px; /* Reduce heading size for mobile */
+    margin-bottom: 20px;
+    padding-top: 270px ;
+    text-align: left;
+    margin-left: 30px;
+  }
+
+  .testimonialContainer {
+    display: flex;
+    justify-content: center;
+    gap: 0; /* No gap since only one card is visible */
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
+
+  .testimonialCard {
+    width: 75%; /* Fit card to mobile screen */
+    height: 130px; /* Allow height to adjust based on content */
+   }
+
+  /* Show only the first card, hide the others */
+  .testimonialCard:not(:first-child) {
+    display: none;
+  }
+
+  .cardContent {
+    background-size: 90px; /* Slightly reduce quote icon size for mobile */
+    background-position-x: left; /* Adjust position for smaller card */
+    background-position-y: top;
+  }
+
+  .quoteText {
+    font-size: 17px; /* Slightly reduce text size for mobile */
+    line-height: 120%; 
+    font-weight: 600;
+    letter-spacing: 2%;
+    font-family: "Source Sans 3";
+    padding: 0 20px;
+    text-align: left;
+  }
+}

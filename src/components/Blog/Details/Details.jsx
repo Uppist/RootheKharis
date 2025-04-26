@@ -7,6 +7,8 @@ import estate2 from "../../../assets/Blog/estate2.jpg";
 import deed2 from "../../../assets/Blog/deed2.jpg";
 import fixed2 from "../../../assets/Blog/fixed2.jpg";
 import joint2 from "../../../assets/Blog/joint1.jpg";
+import board2 from "../../../assets/Blog/board2.jpg";
+import tax2 from "../../../assets/Blog/tax2.jpg";
 
 // import arrrow from "../../../assets/akar-icons_arrow-right-thin.svg";
 // import arr from "../../../assets/akar-icons_arrow-left-thin.svg";
@@ -21,6 +23,8 @@ export default function Details() {
     "deed2.jpg": deed2,
     "fixed2.jpg": fixed2,
     "joint2.jpg": joint2,
+    "board2.jpg": board2,
+    "tax2.jpg": tax2,
   };
 
   const location = useLocation();

@@ -8,6 +8,8 @@ import estate from "../../assets/Blog/estate.jpg";
 import deed from "../../assets/Blog/deed.jpg";
 import fixed from "../../assets/Blog/fixed.jpg";
 import joint1 from "../../assets/Blog/joint2.jpg";
+import board1 from "../../assets/Blog/board1.jpg";
+import tax1 from "../../assets/Blog/tax1.jpg";
 
 import { Link, useNavigate } from "react-router-dom";
 import blog from "./Blog.json";
@@ -20,6 +22,8 @@ export default function Blog() {
     "fixed.jpg": fixed,
     "deed.jpg": deed,
     "joint1.jpg": joint1,
+    "board1.jpg": board1,
+    "tax1.jpg": tax1,
   };
   useEffect(() => {
     window.scrollTo(0, 0);
