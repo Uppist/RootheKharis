@@ -85,6 +85,10 @@
     margin-left: 30px;
   }
 
+  .testimonialSection {
+    padding-bottom: 0;
+  }
+
   .testimonialContainer {
     display: flex;
     justify-content: center;
@@ -117,5 +121,6 @@
     font-family: "Source Sans 3";
     padding: 0 20px;
     text-align: left;
+    padding-bottom: 75px;
   }
 }
