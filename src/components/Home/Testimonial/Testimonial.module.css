@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap");
 
 .testimonialSection {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 40px 0;
   text-align: center;
   overflow-x: visible;
@@ -12,7 +14,7 @@
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-size: 50px;
-  color: #233E81;
+  color: #233e81;
   margin-bottom: 40px;
 }
 
@@ -23,49 +25,54 @@
 }
 
 .testimonialCard {
-  background-color: #233E81;
+  background-color: #233e81;
   border-radius: 16px;
-  padding: 24px;
-  width: 485px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  color: #FFFFFF;
-  border: 1px solid #FFFFFF;
+  /* padding: 24px; */
+  /* width: 485px; */
+  /* height: 212px; */
+  /* display: flex; */
+  /* justify-content: center; */
+  color: #ffffff;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  padding: 10px;
+  /* border: 1px solid #ffffff; */
 }
 
 .cardContent {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
-  background: url('../../../assets/quote-icon.svg') no-repeat;
-  background-size: 80px;
+  background: url("../../../assets/quote-icon.svg") no-repeat;
+  /* background-size: 80px; */
   background-position-x: left;
   background-position-y: top;
+  height: 212px;
 }
 
-.testimonialCard:nth-child(2) .cardContent {
+/* .testimonialCard:nth-child(2) .cardContent {
   background-position-x: 5px;
   background-position-y: top;
   padding-right: 90px;
 }
 
-.testimonialCard:nth-child(2) .cardContent .quoteText{
+.testimonialCard:nth-child(2) .cardContent .quoteText {
   padding-left: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .quoteText {
   font-family: "Source Sans 3";
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
-  line-height: 100%;
   margin: 0;
-  text-align: center;
-  letter-spacing: 2%;
+  text-align: left;
+  width: 339px;
+  display: flex;
+  justify-content: center;
 }
 
 /* Mobile Responsiveness */
@@ -73,7 +80,7 @@
   .heading {
     font-size: 28px; /* Reduce heading size for mobile */
     margin-bottom: 20px;
-    padding-top: 270px ;
+    padding-top: 270px;
     text-align: left;
     margin-left: 30px;
   }
@@ -89,7 +96,7 @@
   .testimonialCard {
     width: 75%; /* Fit card to mobile screen */
     height: 130px; /* Allow height to adjust based on content */
-   }
+  }
 
   /* Show only the first card, hide the others */
   .testimonialCard:not(:first-child) {
@@ -104,7 +111,7 @@
 
   .quoteText {
     font-size: 17px; /* Slightly reduce text size for mobile */
-    line-height: 120%; 
+    line-height: 120%;
     font-weight: 600;
     letter-spacing: 2%;
     font-family: "Source Sans 3";

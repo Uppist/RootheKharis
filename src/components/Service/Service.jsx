@@ -10,6 +10,7 @@ import service4 from "../../assets/Service/service4.png";
 import service5 from "../../assets/Service/service5.png";
 import service6 from "../../assets/Service/service6.png";
 import service7 from "../../assets/Service/service7.png";
+import service8 from "../../assets/Service/service8.png";
 import Mark from "./Mark";
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
@@ -43,12 +44,7 @@ export default function Service() {
     }
   }, [location.state]);
 
-  const services = [
-    "Immigration",
-    "Tax advisory",
-    "Technology & digital economy",
-    "Finance & capital markets",
-  ];
+  const services = ["Immigration", "Finance & capital markets", "Tax advisory"];
   const imageMap = {
     "service1.png": service1,
     "service2.png": service2,
@@ -57,6 +53,7 @@ export default function Service() {
     "service5.png": service5,
     "service6.png": service6,
     "service7.png": service7,
+    "service8.png": service8,
   };
   return (
     <div className={styles.bg1}>

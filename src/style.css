@@ -42,3 +42,12 @@ a {
 h4 {
   margin: 0;
 }
+
+.tr {
+  background-color: blue;
+}
+
+th {
+  width: 230px;
+  color: white;
+}
