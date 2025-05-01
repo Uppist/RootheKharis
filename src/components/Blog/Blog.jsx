@@ -10,6 +10,7 @@ import fixed from "../../assets/Blog/fixed.jpg";
 import joint1 from "../../assets/Blog/joint2.jpg";
 import board1 from "../../assets/Blog/board1.jpg";
 import tax1 from "../../assets/Blog/tax1.jpg";
+import transfer1 from "../../assets/Blog/transfer1.jpg";
 
 import { Link, useNavigate } from "react-router-dom";
 import blog from "./Blog.json";
@@ -24,6 +25,7 @@ export default function Blog() {
     "joint1.jpg": joint1,
     "board1.jpg": board1,
     "tax1.jpg": tax1,
+    "transfer1.jpg" : transfer1,
   };
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -9,6 +9,7 @@ import fixed2 from "../../../assets/Blog/fixed2.jpg";
 import joint2 from "../../../assets/Blog/joint1.jpg";
 import board2 from "../../../assets/Blog/board2.jpg";
 import tax2 from "../../../assets/Blog/tax2.jpg";
+import transfer2 from "../../../assets/Blog/transfer2.jpg";
 
 // import arrrow from "../../../assets/akar-icons_arrow-right-thin.svg";
 // import arr from "../../../assets/akar-icons_arrow-left-thin.svg";
@@ -25,6 +26,7 @@ export default function Details() {
     "joint2.jpg": joint2,
     "board2.jpg": board2,
     "tax2.jpg": tax2,
+    "transfer2.jpg": transfer2,
   };
 
   const location = useLocation();
