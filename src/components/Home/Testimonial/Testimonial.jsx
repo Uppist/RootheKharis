@@ -10,17 +10,19 @@ const Testimonial = () => {
   const testimonials = [
     {
       quote:
-        '"I really do appreciate your good work and I am confident to stand as a referral to more clients in the future."',
-      attribution: "Mr. Jude Joseph MD and CEO \n Soil Foods Services Ltd.",
+        "I really do appreciate your good work and I am confident to stand as a referral to more clients in the future.",
+      name: "Mr. Jude Joseph",
+      position: "CEO, Soil Foods Services Ltd.",
     },
     {
-      quote: '\n"I like your work."',
-      attribution: "MD, Royal Albert Properties Limited",
+      quote:"I like your work",
+      name: "MD",
+      position: "Royal Albert Properties Limited",
     },
     {
-      quote:
-        '"This is great. Many thanks to you and Ehis for your work on this case."',
-      attribution: "Dr. Kene Onwugaje MD, REDUS CENTER FOR DIGESTIVE HEALTH LTD",
+      quote: "This is great. Many thanks to you and Ehis for your work on this case.",
+      name: "Dr. Kene Onwugaje",
+      position: "MD, REDUS CENTER FOR DIGESTIVE HEALTH LTD",
     },
   ];
 
@@ -51,10 +53,13 @@ const Testimonial = () => {
           <div key={index} className={styles.testimonialCard}>
             <div className={styles.cardContent}>
               <p id="quote-text" className={styles.quoteText}>
-                {testimonial.quote}
+                "{testimonial.quote}"
               </p>
               <div className={styles.attribution}>
-                <span>{testimonial.attribution}</span>
+                <span className={styles.name}>{testimonial.name}</span>
+              </div>
+              <div className={styles.position}>
+                <span>{testimonial.position}</span>
               </div>
             </div>
           </div>
