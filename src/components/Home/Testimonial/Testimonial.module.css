@@ -21,64 +21,72 @@
 .testimonialContainer {
   display: flex;
   justify-content: center;
-  gap: 35px;
+  /* gap: 20px; */
 }
 
 .testimonialCard {
   background-color: #233e81;
-  border-radius: 16px;
+  border-radius: 20px;
   /* padding: 24px; */
-  /* width: 485px; */
-  /* height: 212px; */
-  /* display: flex; */
-  /* justify-content: center; */
+  width: 420px!important;
+  height: 225px;
+  display: flex;
+  justify-content: center;
   color: #ffffff;
-  width: -webkit-fill-available;
-  height: -webkit-fill-available;
-  padding: 10px;
-  /* border: 1px solid #ffffff; */
 }
 
 .cardContent {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: url("../../../assets/quote-icon.svg") no-repeat;
-  /* background-size: 80px; */
+  background-size: 70px;
   background-position-x: left;
   background-position-y: top;
-  height: 212px;
+  /* height: 100%; */
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
-
-/* .testimonialCard:nth-child(2) .cardContent {
-  background-position-x: 5px;
-  background-position-y: top;
-  padding-right: 90px;
-}
-
-.testimonialCard:nth-child(2) .cardContent .quoteText {
-  padding-left: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .quoteText {
   font-family: "Source Sans 3";
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
-  margin: 0;
-  text-align: left;
+  margin-top: 10px;
+  text-align: start;
   width: 339px;
-  display: flex;
-  justify-content: center;
+  padding-left: 70px;
+  /* New change: Added white-space: pre-line to support line breaks with \n */
+  white-space: pre-line;
+}
+
+.attribution {
+  width: 339px;
+  text-align: left;
+  padding-left: 70px;
+}
+
+.attribution::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.attribution span {
+  font-family: "Source Sans 3";
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .heading {
-    font-size: 28px; /* Reduce heading size for mobile */
+    font-size: 28px;
     margin-bottom: 20px;
     padding-top: 270px;
     text-align: left;
@@ -89,38 +97,36 @@
     padding-bottom: 0;
   }
 
-  .testimonialContainer {
-    display: flex;
-    justify-content: center;
-    gap: 0; /* No gap since only one card is visible */
-    padding-top: 10px;
-    padding-bottom: 25px;
-  }
-
   .testimonialCard {
-    width: 75%; /* Fit card to mobile screen */
-    height: 130px; /* Allow height to adjust based on content */
-  }
-
-  /* Show only the first card, hide the others */
-  .testimonialCard:not(:first-child) {
-    display: none;
+    width: 75%;
+    height: 130px;
+    padding: 10px;
   }
 
   .cardContent {
-    background-size: 90px; /* Slightly reduce quote icon size for mobile */
-    background-position-x: left; /* Adjust position for smaller card */
+    background-size: 90px;
+    background-position-x: left;
     background-position-y: top;
   }
 
   .quoteText {
-    font-size: 17px; /* Slightly reduce text size for mobile */
+    font-size: 17px;
     line-height: 120%;
     font-weight: 600;
     letter-spacing: 2%;
-    font-family: "Source Sans 3";
     padding: 0 20px;
     text-align: left;
-    padding-bottom: 75px;
+    padding-bottom: 20px;
+    padding-left: 90px;
+  }
+
+  .attribution {
+    width: 100%;
+    padding-left: 90px;
+    padding-bottom: 20px;
+  }
+
+  .attribution span {
+    font-size: 12px;
   }
 }
