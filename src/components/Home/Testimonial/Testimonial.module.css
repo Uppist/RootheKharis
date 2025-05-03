@@ -123,11 +123,11 @@
   }
 
   .testimonialCard {
-    width: 320px !important; /* Fixed width to match UI design */
-    max-width: 390px; /* Ensure it fits within viewport */
+    width: 305px !important; /* Fixed width to match UI design */
+    /* max-width: 390px; Ensure it fits within viewport */
     height: auto; /* Allow height to adjust based on content */
-    padding: 10px;
     margin: 0 auto; /* Center the card */
+    /* gap: 20px; */
   }
 
   .cardContent {
@@ -143,8 +143,8 @@
     font-weight: 600;
     letter-spacing: 2%;
     padding: 0;
-    padding-left: 60px; /* Align with quote icon */
-    padding-right: 25px;
+    padding-left: 55px; /* Align with quote icon */
+    padding-right: 30px;
     text-align: left;
     width: 100%; /* Fit within card */
     display: block; /* Remove flex to prevent alignment issues */
@@ -173,5 +173,10 @@
 
   .position span {
     font-size: 12px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    font-family: "Source Sans 3";
+    font-weight: 400;
+    font-size: 9px;
   }
 }
