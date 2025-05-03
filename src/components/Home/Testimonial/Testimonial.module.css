@@ -109,23 +109,32 @@
     margin-bottom: 20px;
     padding-top: 270px;
     text-align: left;
-    margin-left: 30px;
+    padding-left: 30px;
+    overflow-x: hidden;
+    max-width: 100%;
   }
 
   .testimonialSection {
-    padding-bottom: 0;
+    /* padding-bottom: 0; */
+    padding-right: 30px;
+    padding-left: 20px;
+    overflow-x: hidden;
+    max-width: 100%;
   }
 
   .testimonialCard {
-    width: 75%;
-    height: 130px;
+    width: 320px !important; /* Fixed width to match UI design */
+    max-width: 390px; /* Ensure it fits within viewport */
+    height: auto; /* Allow height to adjust based on content */
     padding: 10px;
+    margin: 0 auto; /* Center the card */
   }
 
   .cardContent {
-    background-size: 90px;
+    background-size: 70px; /* Match desktop quote icon size for consistency */
     background-position-x: left;
     background-position-y: top;
+    padding: 20px; /* Consistent padding */
   }
 
   .quoteText {
@@ -133,25 +142,33 @@
     line-height: 120%;
     font-weight: 600;
     letter-spacing: 2%;
-    padding: 0 20px;
+    padding: 0;
+    padding-left: 60px; /* Align with quote icon */
+    padding-right: 25px;
     text-align: left;
-    padding-bottom: 20px;
-    padding-left: 90px;
+    width: 100%; /* Fit within card */
+    display: block; /* Remove flex to prevent alignment issues */
   }
 
   .attribution {
     width: 100%;
-    padding-left: 90px;
-    padding-bottom: 20px;
+    padding-left: 70px;
+    padding-bottom: 10px;
   }
 
   .attribution span {
-    font-size: 12px;
+    font-size: 15px;
+    font-family: "Source Sans 3";
+    font-weight: 700;
   }
 
   .position {
     width: 100%;
-    padding-left: 90px;
+    padding-left: 70px;
+    padding-bottom: 10px;
+    font-family: "Source Sans 3";
+    font-weight: 400;
+    font-size: 9px;
   }
 
   .position span {
