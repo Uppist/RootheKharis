@@ -10,7 +10,7 @@ import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import Blogs from "./components/Blog/Blogs";
 import Detail from "./components/Blog/Details/Detail";
 import WhatsAppIcon from "./Svg";
-import Webinar from "./components/webinar/webinar";
+import Webinar from "./components/webinar/Webinar";
 
 export default function App() {
   return (
