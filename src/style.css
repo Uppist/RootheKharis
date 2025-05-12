@@ -51,3 +51,244 @@ th {
   width: 230px;
   color: white;
 }
+
+/* Navbar styles */
+.navbar {
+  position: fixed; /* Static feature across the page */
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Small black shadow outline */
+  z-index: 1000;
+}
+
+.navbar-logo {
+  height: 47.5px; /* Adjust based on your logo PNG size */
+  width: auto;
+  padding-left: 50px;
+}
+
+/* Page Styles */
+.page {
+  margin-top: 60px; /* Offset for fixed navbar height */
+  background: url("../src/assets/background.png") no-repeat;
+  background-size: contain;
+}
+
+/* Webinar section styles (default: desktop view, form left, image right) */
+.webinar-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 650px;
+  padding-left: 50px;
+}
+
+/* Webinar form styles (left side in desktop view) */
+.webinar-form {
+  max-width: 400px;
+  margin-right: 100px;
+}
+
+.webinar-form h2 {
+  font-family: 'Source Sans 3';
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.webinar-form .highlight {
+  color: #B8824F;
+  font-weight: 650;
+  font-size: 29px;
+  font-family: 'Source Sans 3';
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+
+.form-input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-family: 'Source Sans 3';
+}
+
+input:focus {
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: #999;
+}
+
+.register-btn {
+  background-color: #B8824F;
+  font-family: 'Source Sans 3';
+  color: #fff;
+  border: none;
+  padding: 16px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  line-height: normal;
+  font-family: 'Source Sans 3';
+  width: 229px;
+  height: 58px;
+}
+
+.register-btn:hover {
+  background-color: #a0743f;
+}
+
+/* Webinar details styles (right side in desktop view) */
+.webinar-details {
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 500px;
+  padding-bottom: 15px;
+}
+
+.webinar-image {
+  width: 500px;
+  height: auto;
+  display: block;
+  padding-bottom: 15px;
+}
+
+/* Thank You section styles (replaces form on left side in desktop view) */
+.thank-you-section {
+  max-width: 400px;
+  margin-right: 100px;
+  color: #fff;
+}
+
+.thank-you-section h2 {
+  font-family: 'Source Sans 3';
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.thank-you-section {
+  color: #2B2B2B;
+  font-weight: 650;
+  font-size: 29px;
+}
+
+.highlight {
+  color: #B8824F;
+  font-weight: 650;
+  font-size: 29px;
+}
+
+.thank-you-section p {
+  font-size: 22px;
+  color: #2B2B2B;
+  font-weight: 450;
+  font-family: 'Source Sans 3';
+}
+
+/* Mobile Responsiveness (screen width <= 768px) */
+@media (max-width: 768px) {
+
+  .navbar-logo {
+    padding-left: 18px;
+  }
+  /* Adjust webinar section for mobile: stack image and form vertically */
+  .webinar-section {
+    flex-direction: column;
+    min-height: auto;
+    padding: 0 20px; /* Reduce side padding for mobile */
+    margin-top: 130px; /* Gap between navbar and image */
+    margin-bottom: 200px;
+  }
+
+  /* Reorder elements: image above form/thank-you on mobile */
+  .webinar-details {
+    order: -1; /* Moves image to appear first (above form) */
+    max-width: 350px; /* Smaller width for mobile */
+    height: 345px; /* Let height adjust naturally */
+    margin-bottom: 30px; /* Gap between image and form */
+  }
+
+  .webinar-image {
+    width: 320px;
+    height: 355px;
+  }
+
+  /* Webinar form styles for mobile */
+  .webinar-form {
+    order: 0; /* Ensure form appears after image */
+    max-width: 350px; /* Match image width for alignment */
+    margin: 0 auto; /* Center the form */
+  }
+
+  .webinar-form h2 {
+    font-size: 24px; /* Slightly smaller heading */
+    text-align: center; /* Center the heading */
+  }
+
+  .webinar-form .highlight {
+    font-size: 23px; /* Adjust highlight size */
+    font-weight: 700;
+  }
+
+  .registration-form {
+    gap: 25px; /* Reduce gap between inputs */
+  }
+
+  .form-input {
+    font-size: 0.9rem; /* Slightly smaller font for inputs */
+  }
+
+  .register-btn {
+    width: 100%; /* Full width of the form */
+    font-size: 16px; /* Slightly smaller font */
+    height: 50px; /* Adjust height for mobile */
+  }
+
+  /* Thank You section styles for mobile */
+  .thank-you-section {
+    order: 0; /* Ensure thank-you appears after image */
+    max-width: 350px; /* Match form width */
+    margin: 0 auto; /* Center the section */
+    color: #fff; /* Ensure text is visible on dark background */
+  }
+
+  .thank-you-section h2 {
+    font-size: 24px; /* Match form heading size */
+    text-align: left; /* Center the heading */
+    color: #2B2B2B;
+    font-weight: 450;
+  }
+
+  .thank-you-section .highlight {
+    font-size: 23px; /* Match form highlight size */
+    font-weight: 700;
+  }
+
+  .thank-you-section p {
+    font-size: 17px; /* Slightly smaller text */
+    text-align: left; /* Center the text */
+    color: #2B2B2B; /* Match form text visibility */
+    text-align: center;
+    font-family: 'Source Sans 3';
+  }
+}

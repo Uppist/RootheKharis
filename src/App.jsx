@@ -10,6 +10,7 @@ import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import Blogs from "./components/Blog/Blogs";
 import Detail from "./components/Blog/Details/Detail";
 import WhatsAppIcon from "./Svg";
+import Webinar from "./components/webinar/webinar";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
           <Route path='/Articles' element={<Blogs />} />
           <Route path='/blog-details' element={<Detail />} />
           <Route path='/contactus' element={<Contactus />} />
+          <Route path='/Webinar' element={<Webinar />} />
         </Routes>
       </HashRouter>
     </>
