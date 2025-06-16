@@ -11,6 +11,8 @@ import joint1 from "../../assets/Blog/joint2.jpg";
 import board1 from "../../assets/Blog/board1.jpg";
 import tax1 from "../../assets/Blog/tax1.jpg";
 import transfer1 from "../../assets/Blog/transfer1.jpg";
+import electricity1 from "../../assets/Blog/electricity1.jpg";
+import key1 from "../../assets/Blog/key1.jpg";
 
 import { Link, useNavigate } from "react-router-dom";
 import blog from "./Blog.json";
@@ -26,6 +28,8 @@ export default function Blog() {
     "board1.jpg": board1,
     "tax1.jpg": tax1,
     "transfer1.jpg" : transfer1,
+    "electricity1.jpg": electricity1,
+    "key1.jpg": key1,
   };
   useEffect(() => {
     window.scrollTo(0, 0);
