@@ -12,6 +12,7 @@ import tax2 from "../../../assets/Blog/tax2.jpg";
 import transfer2 from "../../../assets/Blog/transfer2.jpg";
 import electricity2 from "../../../assets/Blog/electricity2.jpg";
 import key2 from "../../../assets/Blog/key2.jpg";
+import invest1 from "../../../assets/Blog/invest1.jpg";
 
 // import arrrow from "../../../assets/akar-icons_arrow-right-thin.svg";
 // import arr from "../../../assets/akar-icons_arrow-left-thin.svg";
@@ -31,6 +32,7 @@ export default function Details() {
     "transfer2.jpg": transfer2,
     "electricity2.jpg": electricity2,
     "key2.jpg": key2,
+    "invest1.jpg": invest1,
   };
 
   const location = useLocation();

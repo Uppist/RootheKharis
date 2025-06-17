@@ -13,6 +13,7 @@ import tax1 from "../../assets/Blog/tax1.jpg";
 import transfer1 from "../../assets/Blog/transfer1.jpg";
 import electricity1 from "../../assets/Blog/electricity1.jpg";
 import key1 from "../../assets/Blog/key1.jpg";
+import invest2 from "../../assets/Blog/invest2.jpg";
 
 import { Link, useNavigate } from "react-router-dom";
 import blog from "./Blog.json";
@@ -30,6 +31,7 @@ export default function Blog() {
     "transfer1.jpg" : transfer1,
     "electricity1.jpg": electricity1,
     "key1.jpg": key1,
+    "invest2.jpg": invest2,
   };
   useEffect(() => {
     window.scrollTo(0, 0);
